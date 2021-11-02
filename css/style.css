@@ -7,3 +7,14 @@ body {
     color: #fff;
     text-shadow: 2px 2px 2px #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
+
+.border-red {
+    border-left: 5px solid red;
+    border-right: 5px solid red;
+}
+
+.border-green {
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+    text-decoration: line-through;
+}

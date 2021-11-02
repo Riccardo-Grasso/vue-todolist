@@ -6,9 +6,18 @@ const app = new Vue({
         titolo: "Hello Vueoolean - ToDoList",
         nuovaAttivita: "",
         listaAttivita: [
-            { attivita: "Lezione Boolean: 9:30" },
-            { attivita: "Esercitazione: 15:00" },
-            { attivita: "Masterclass: 18:30" }
+            {
+                attivita: "Lezione Boolean: 9:30",
+                check: false
+            },
+            {
+                attivita: "Esercitazione: 15:00",
+                check: false
+            },
+            {
+                attivita: "Masterclass: 18:30",
+                check: false
+            }
         ]
     },
     methods: {
@@ -18,7 +27,8 @@ const app = new Vue({
                 return;
             }
             this.listaAttivita.push({
-                attivita: this.nuovaAttivita.trim()
+                attivita: this.nuovaAttivita.trim(),
+                check: false
             });
             this.nuovaAttivita = "";
         },
