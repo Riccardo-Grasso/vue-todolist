@@ -10,6 +10,14 @@ const app = new Vue({
             { attivita: "Esercitazione - 15:00" },
             { attivita: "Masterclass: 18:30" }
         ]
+    },
+    methods: {
+        pushElement() {
+            this.listaAttivita.push({
+                attivita: this.nuovaAttivita.trim()
+            });
+            this.nuovaAttivita = "";
+        }
     }
 
 });
