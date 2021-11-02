@@ -3,7 +3,7 @@ Vue.config.devtools = true;
 const app = new Vue({
     el: "#root",
     data: {
-        titolo: "Hello Vueoolean! - ToDoList",
+        titolo: "Hello Vueoolean - ToDoList",
         nuovaAttivita: "",
         listaAttivita: [
             { attivita: "Lezione Boolean: 9:30" },
@@ -13,6 +13,10 @@ const app = new Vue({
     },
     methods: {
         pushElement() {
+
+            if (this.nuovaAttivita.trim() === "") {
+                return;
+            }
             this.listaAttivita.push({
                 attivita: this.nuovaAttivita.trim()
             });
