@@ -51,8 +51,14 @@
 
                         <button type="button" class="btn-close flex-end" aria-label="Close"
                             @click="deleteActivity(i)"></button>
+
+
                     </div>
 
+                </div>
+
+                <div class="empty" v-if="listaAttivita.length === 0">
+                    <h3>Aggiungi una nuova attività...</h3>
                 </div>
             </div>
         </div>
