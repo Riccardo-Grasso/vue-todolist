@@ -6,8 +6,8 @@ const app = new Vue({
         titolo: "Hello Vueoolean! - ToDoList",
         nuovaAttivita: "",
         listaAttivita: [
-            { attivita: "Lezione Boolean - 9:30" },
-            { attivita: "Esercitazione - 15:00" },
+            { attivita: "Lezione Boolean: 9:30" },
+            { attivita: "Esercitazione: 15:00" },
             { attivita: "Masterclass: 18:30" }
         ]
     },
