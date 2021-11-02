@@ -21,6 +21,10 @@ const app = new Vue({
                 attivita: this.nuovaAttivita.trim()
             });
             this.nuovaAttivita = "";
+        },
+
+        deleteActivity(index) {
+            this.listaAttivita.splice(index, 1);
         }
     }
 
